@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2f3943"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ProgressBarActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/backgorund1"
+        android:id="@+id/progress_logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/progress_logo"
+        android:text="Welcome to WheaterApp\nKelompok 7"
+        android:textAlignment="center"
+        android:id="@+id/progress_text1"/>
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/progress_layout"
+     android:layout_margin="100dp"
+     android:layout_below="@+id/progress_text1">
+
+     <ProgressBar
+         android:id="@+id/progress_bar"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:indeterminate="false"
+         android:progressDrawable="@drawable/circle_progress_bar"
+         android:textAlignment="center" />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/progress_text"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:gravity="center"
+         android:text="---"
+         android:textColor="#ffff"
+         android:textSize="28sp"
+         android:textStyle="bold" />
+
+ </RelativeLayout>
+</LinearLayout>
